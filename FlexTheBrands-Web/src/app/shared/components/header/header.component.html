@@ -1,0 +1,13 @@
+<header class="header">
+  <div class="header-brand">
+    <a routerLink="/home">FlexTheBrands</a>
+  </div>
+  <nav class="header-nav">
+    <a routerLink="/home" routerLinkActive="active">Home</a>
+    <a routerLink="/brands" routerLinkActive="active">Brands</a>
+  </nav>
+  <div class="header-actions">
+    <button *ngIf="authService.isLoggedIn()" (click)="logout()">Logout</button>
+    <a *ngIf="!authService.isLoggedIn()" routerLink="/auth/login">Login</a>
+  </div>
+</header>
