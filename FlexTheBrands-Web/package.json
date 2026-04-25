@@ -2,6 +2,10 @@
   "name": "flex-the-brands-web",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=18.13.0",
+    "npm": ">=9.0.0"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
